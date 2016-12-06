@@ -1,0 +1,50 @@
+﻿@model Christopher.Goguen.Lab6.Models.RentalOrder
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>RentalOrder</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Employee.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Employee.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CheckoutDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CheckoutDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UniqueId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UniqueId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReturnDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReturnDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RentalOrderId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
